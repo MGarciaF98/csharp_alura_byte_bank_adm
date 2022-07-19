@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AluraByteBankAdm.Core
 {
-    internal class GerenciadorDeBonificacao
+    public class GerenciadorDeBonificacao
     {
         private double totalBonificacao { get; set; }
 
