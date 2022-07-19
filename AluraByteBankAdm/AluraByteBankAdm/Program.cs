@@ -12,11 +12,20 @@ Diretor matheus = new Diretor(
 
 Console.WriteLine("Total de funcionários: " + Funcionario.TotalFuncionario);
 
-Funcionario gabi = new Funcionario(
-    "Gabriela", "23412364334-35", 5000.0
+Designer gabi = new Designer(
+    "Gabriela", "23412364334-35"
+    );
+
+
+Auxiliar bruno = new Auxiliar(
+    "Gabriela", "23412364334-35"
     );
 
 Console.WriteLine("Total de funcionários: " + Funcionario.TotalFuncionario);
+
+gerenciadorDeBonificacao.registrar(matheus);
+gerenciadorDeBonificacao.registrar(gabi);
+gerenciadorDeBonificacao.registrar(bruno);
 
 Console.WriteLine("Salário Matheus: " + matheus.Salario);
 Console.WriteLine("Salário Gabi: " + gabi.Salario);
