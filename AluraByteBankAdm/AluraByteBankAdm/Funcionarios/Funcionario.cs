@@ -12,6 +12,7 @@ namespace AluraByteBankAdm.Funcionarios
         public string Cpf { get; private set; }
         public double Salario { get; protected set; }
 
+
         public Funcionario(string nome, string cpf, double salario)
         {
             Console.WriteLine("Criando um funcionário");
@@ -35,6 +36,8 @@ namespace AluraByteBankAdm.Funcionarios
          public abstract void aumentarSalario();
 
         public static int TotalFuncionario { get; private set; }
+
+       
 
     }
 }

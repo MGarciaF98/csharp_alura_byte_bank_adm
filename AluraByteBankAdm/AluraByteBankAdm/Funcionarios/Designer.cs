@@ -10,7 +10,7 @@ namespace AluraByteBankAdm.Funcionarios
     {
         public Designer(string nome, string cpf) : base(nome, cpf, 3000)
         {
-            Console.WriteLine("Criando um diretor");
+            Console.WriteLine("Criando um designer");
         }
 
         public override double getBonificacao()
