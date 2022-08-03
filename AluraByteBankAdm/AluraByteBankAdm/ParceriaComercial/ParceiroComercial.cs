@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AluraByteBankAdm.ParceriaComercial
 {
-    public class ParceiroComercial : Autenticavel
+    public class ParceiroComercial : IAutenticavel
     {
         public ParceiroComercial( string login, string senha)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AluraByteBankAdm.Funcionarios
 {
-    public abstract class FuncionarioAutenticado : Funcionario, Autenticavel
+    public abstract class FuncionarioAutenticado : Funcionario, IAutenticavel
     {
 
         public string Senha { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AluraByteBankAdm.SistemaInterno
 {
-    public interface Autenticavel
+    public interface IAutenticavel
     {
         public bool Autenticar(string senha, string login);
     }

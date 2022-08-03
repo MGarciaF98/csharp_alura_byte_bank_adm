@@ -10,7 +10,7 @@ namespace AluraByteBankAdm.SistemaInterno
 {
     public class SistemaInterno
     {
-        public bool Logar(Autenticavel funcionario, String login, String senha)
+        public bool Logar(IAutenticavel funcionario, String login, String senha)
         {
             bool usuarioAutenticado = funcionario.Autenticar(login, senha);
             if (usuarioAutenticado)
