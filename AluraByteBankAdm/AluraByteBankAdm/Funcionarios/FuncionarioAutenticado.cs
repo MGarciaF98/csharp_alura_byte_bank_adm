@@ -5,22 +5,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AluraByteBankAdm.ParceriaComercial
+namespace AluraByteBankAdm.Funcionarios
 {
-    public class ParceiroComercial : Autenticavel
+    public abstract class FuncionarioAutenticado : Funcionario, Autenticavel
     {
-        public ParceiroComercial( string login, string senha)
-        {
-            Senha = senha;
-            Login = login;
-        }
 
         public string Senha { get; set; }
         public string Login { get; set; }
 
 
+        protected FuncionarioAutenticado(string nome, string cpf, double salario, string login ,string senha) : base(nome, cpf, salario)
+        {
+            Senha = senha;
+            Login = login;
+        }
+
         public bool Autenticar(string login, string senha)
         {
+            
             return this.Senha == senha && this.Login == login;
         }
     }

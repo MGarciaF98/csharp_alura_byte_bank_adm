@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AluraByteBankAdm.Funcionarios
 {
-    public class GerenteDeContas : Autenticavel
+    public class GerenteDeContas : FuncionarioAutenticado
     {
 
 

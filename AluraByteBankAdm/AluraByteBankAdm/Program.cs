@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AluraByteBankAdm.Core;
 using AluraByteBankAdm.Funcionarios;
+using AluraByteBankAdm.ParceriaComercial;
 using AluraByteBankAdm.SistemaInterno;
 
 ///initSistema();
@@ -16,7 +17,7 @@ void initSistema()
     GerenciadorDeBonificacao gerenciadorDeBonificacao = new GerenciadorDeBonificacao();
 
     Diretor matheus = new Diretor(
-        "Matheus", "472444555-35", 7000.0, "12345"
+        "Matheus", "472444555-35", 7000.0, "didi","12345"
         );
 
     Console.WriteLine("Total de funcionários: " + Funcionario.TotalFuncionario);
@@ -55,13 +56,17 @@ void usarSistema()
 {
     SistemaInterno sistemaInterno = new SistemaInterno();
 
-    Diretor roberta = new Diretor("Roberta","222.333.444.55", 4000.00, "12345");
+    Diretor roberta = new Diretor("Roberta","222.333.444.55", 4000.00, "roberta123", "12345");
 
 
-    GerenteDeContas ursula = new GerenteDeContas("Ursula", "999.775.444-11", 3999.99, "1234");
+    GerenteDeContas ursula = new GerenteDeContas("Ursula", "999.775.444-11", 3999.99,"ursula123", "1234");
 
-    sistemaInterno.Logar(roberta, "12345");
-    sistemaInterno.Logar(ursula, "1234");
+    ParceiroComercial pedro = new ParceiroComercial("pedro123", "1234");
+
+
+    sistemaInterno.Logar(roberta, "roberta123", "12345");
+    sistemaInterno.Logar(ursula, "ursula123", "1234");
+    sistemaInterno.Logar(pedro, "pedro123", "1234");
 
 }
 

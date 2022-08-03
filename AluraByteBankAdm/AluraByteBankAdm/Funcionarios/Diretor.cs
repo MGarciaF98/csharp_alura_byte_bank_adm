@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace AluraByteBankAdm.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : FuncionarioAutenticado
     {
 
 
-        public Diretor(string nome, string cpf, double salario, string senha, string login) : base(nome, cpf, salario, login, senha)
+        public Diretor(string nome, string cpf, double salario, string login, string senha) : base(nome, cpf, salario, login,senha)
         {
             Console.WriteLine("Criando um diretor");
         }
@@ -26,6 +26,5 @@ namespace AluraByteBankAdm.Funcionarios
             Salario = Salario*1.2;
         }
 
-      
     }
 }
